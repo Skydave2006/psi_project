@@ -20,11 +20,11 @@
 
 1. main.py (app)
 
-Este arquivo é o ponto de entrada do sistema. O código dentro dele esta a servir como ponto de comando para o resto da aplicação.
+Este programa é o ponto de entrada do sistema. O código dentro dele esta a servir como ponto de comando para o resto da aplicação.
 
 
 2. inserir_utente.py (create)
-Este arquivo contém funções relacionadas à inserção de dados no banco de dados. O processo inclui adicionar utentes (pacientes) e atualizá-los em diferentes tabelas com base no seu estado (internado ou de alta).
+Este programa contém funções relacionadas à inserção de dados no banco de dados. O processo inclui adicionar utentes (pacientes) e atualizá-los em diferentes tabelas com base no seu estado (internado ou de alta).
 
 Funções:
 
@@ -53,7 +53,7 @@ Função para interagir com o usuário, pedindo informações sobre o utente (no
 
 3. table.py (create)
    
-Este arquivo contem definições de tabelas e operações de banco de dados, como a criação de tabelas e a definição de suas colunas.
+Este programa contem definições de tabelas e operações de banco de dados, como a criação de tabelas e a definição de suas colunas.
 
 
 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -69,13 +69,13 @@ estado TEXT NOT NULL
 
 4. __init__.py (create)
    
-Este arquivo é usado para marcar o diretório como um pacote Python e possibilitar a importação de funções ou módulos entre diretórios. Ele pode ser vazio ou conter inicializações específicas.
+Este programa é usado para marcar o diretório como um pacote Python e possibilitar a importação de funções ou módulos entre diretórios. Ele pode ser vazio ou conter inicializações específicas.
 
 
 
 5. menu.py (menu)
    
-Este arquivo contém a lógica de exibição do menu para o usuário, fornecendo opções de interação com o sistema.
+Este programa contém a lógica de exibição do menu para o usuário, fornecendo opções de interação com o sistema.
 
 
 Funções:
@@ -87,7 +87,7 @@ Exibe o menu para o usuário, onde ele pode escolher entre diferentes ações co
 
 6. read_all.py (read)
    
-Este arquivo é responsável por ler os dados do banco de dados. Ele provavelmente está implementando a função para visualizar todos os utentes cadastrados.
+Este programa é responsável por ler os dados do banco de dados. Ele provavelmente está implementando a função para visualizar todos os utentes cadastrados.
 
 
 Funções:
@@ -99,7 +99,7 @@ Função que consulta todos os registros da tabela utentes e os imprime ou os re
 
 7. read_utentes_altas.py (read)
    
-Arquivo responsável por ler os dados específicos dos utentes com estado "alta". Ele provavelmente exibe ou retorna os registros dos utentes que tiveram alta do hospital.
+programa responsável por ler os dados específicos dos utentes com estado "alta". Ele provavelmente exibe ou retorna os registros dos utentes que tiveram alta do hospital.
 
 
 Funções:
@@ -111,7 +111,7 @@ Função que consulta e retorna ou exibe os registros da tabela utentes_alta.
 
 8. read_utentes_internados.py (read)
    
-Semelhante ao arquivo anterior, mas para utentes com o estado "internado".
+Semelhante ao programa anterior, mas para utentes com o estado "internado".
 
 
 Funções:
