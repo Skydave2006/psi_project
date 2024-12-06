@@ -53,7 +53,7 @@ Função para interagir com o usuário, pedindo informações sobre o utente (no
 
 3. table.py (create)
    
-Este programa contem definições de tabelas e operações de banco de dados, como a criação de tabelas e a definição de suas colunas.
+Este programa contem definições de tabelas e operações de base de dados, como a criação de tabelas e a definição de suas colunas.
 
 
 id INTEGER PRIMARY KEY AUTOINCREMENT,
