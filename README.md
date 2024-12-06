@@ -62,12 +62,14 @@ Este arquivo é responsável por ler os dados do banco de dados. Ele provavelmen
 Funções:
 read_all():
 Função que consulta todos os registros da tabela utentes e os imprime ou os retorna de alguma forma.
+
 7. read_utentes_altas.py (read)
 Arquivo responsável por ler os dados específicos dos utentes com estado "alta". Ele provavelmente exibe ou retorna os registros dos utentes que tiveram alta do hospital.
 
 Funções:
 read_utentes_altas():
 Função que consulta e retorna ou exibe os registros da tabela utentes_alta.
+
 8. read_utentes_internados.py (read)
 Semelhante ao arquivo anterior, mas para utentes com o estado "internado".
 
