@@ -24,7 +24,7 @@ Este programa é o ponto de entrada do sistema. O código dentro dele esta a ser
 
 
 2. inserir_utente.py (create)
-Este programa contém funções relacionadas à inserção de dados no banco de dados. O processo inclui adicionar utentes (pacientes) e atualizá-los em diferentes tabelas com base no seu estado (internado ou de alta).
+Este programa contém funções relacionadas à inserção de dados no base de dados. O processo inclui adicionar utentes (pacientes) e atualizá-los em diferentes tabelas com base no seu estado (internado ou de alta).
 
 Funções:
 
@@ -48,7 +48,7 @@ Similar a inserir_internados, mas para os utentes com estado "alta". Atualiza a 
 
 input_user():
 
-Função para interagir com o usuário, pedindo informações sobre o utente (nome, idade, número do BI e estado). Depois de obter esses dados, ela chama as funções de inserção no banco.
+Função para interagir com o usuário, pedindo informações sobre o utente (nome, idade, número do BI e estado). Depois de obter esses dados, ela chama as funções de inserção no base.
 
 
 3. table.py (create)
@@ -87,7 +87,7 @@ Exibe o menu para o usuário, onde ele pode escolher entre diferentes ações co
 
 6. read_all.py (read)
    
-Este programa é responsável por ler os dados do banco de dados. Ele provavelmente está implementando a função para visualizar todos os utentes cadastrados.
+Este programa é responsável por ler os dados do base de dados. Ele provavelmente está implementando a função para visualizar todos os utentes cadastrados.
 
 
 Funções:
