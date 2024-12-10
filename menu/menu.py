@@ -7,6 +7,8 @@ from read.read_all import read_all,read_menores
 from read.read_utentes_altas import read_utentes_altas
 from read.read_utentes_internados import read_utentes_internados
 from read.read_nome import read_nome_all,read_nome_alta,read_nome_internados
+from delete.delete import apagar
+from update.update import update_all
 
 
 
@@ -22,6 +24,7 @@ def menu_utentes():
                                5-Ver só nomes dos utentes\n
                                6-Ver menores\n
                                7-Apagar utente\n
+                               8-Atualizar utente\n
                                0-Sair\n
                                Insira o numero que deseja\n
                                =>
@@ -54,6 +57,12 @@ def menu_utentes():
                         
             case 6:
                 read_menores()# Função de ver utentes menores de idade
+
+            case 7:
+                apagar()
+
+            case 8:
+                update_all()
             case 0:#Sai do ciclo do menu
                 break
             case _:

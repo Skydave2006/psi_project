@@ -68,12 +68,18 @@ def update_all():
         except Exception as e:
             print(f"Ocorreu um erro: {e}")
 
-    curr.execute(f'''UPDATE alunos
-                 SET nome = {nome} AND idade = {idade} AND numero_bi = {numero_bi} AND estado = {estado}
-                 WHERE id = {opc}   
-                ''')
+    curr.execute('''
+                UPDATE utentes
+                SET nome = ?, idade = ?, numero_bi = ?, estado = ?
+                WHERE id = ?   
+                ''',(nome,idade,numero_bi,estado,opc))
+    inserir_altas()
+    inserir_internados()
+
     conn.commit()
-    conn.close
+    conn.close()
+
+update_all()
     
 
 
