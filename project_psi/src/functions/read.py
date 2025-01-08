@@ -1,20 +1,22 @@
 import sqlite3 
 import sys
 import os
-
+#para o repositorio mãe
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..','..')))
 
-# Current file directory
+# ficheiro
 current_dir = os.path.dirname(__file__)
+#para o folder
 base_dir = os.path.abspath(os.path.join(current_dir, '..', '..'))
+#caminho para a base de dados
 db_path = os.path.join(base_dir, 'database', 'corridas.db')
 
 
 
-# Connect to the SQLite database
+# conexão com a database
 conn = sqlite3.connect(db_path)
 curr = conn.cursor()
-
+# ve os pilotos que tem um carro
 def from_piloto_to_carro():
     # curr.execute('''
     #             SELECT * FROM carros INNER JOIN pilotos ON carros.id_piloto = pilotos.id
@@ -30,18 +32,18 @@ def from_piloto_to_carro():
 def read_carros():
     print()
     curr.execute('''SELECT * FROM carros''')
-    resultados = curr.fetchall()  # Obtém todos os resultados da consulta em uma lista de tuplas
+    resultados = curr.fetchall()  # Obtém todos os resultados da base de dados
 
-    # Itera pelos resultados e imprime cada registro
+    # imprime cada registro
     for i in resultados:
         print(i)
 
 def read_pilotos():
     print()
     curr.execute('''SELECT * FROM pilotos''')
-    resultados = curr.fetchall()  # Obtém todos os resultados da consulta em uma lista de tuplas
+    resultados = curr.fetchall()  # Obtém todos os resultados da base de dados
 
-    # Itera pelos resultados e imprime cada registro
+    # imprime cada registro
     for i in resultados:
         print(i)
 

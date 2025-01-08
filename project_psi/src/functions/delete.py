@@ -4,14 +4,16 @@ import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..','..')))
 
-# Current file directory
+# ficheiro
 current_dir = os.path.dirname(__file__)
+#para o folder
 base_dir = os.path.abspath(os.path.join(current_dir, '..', '..'))
+#caminho para a base de dados
 db_path = os.path.join(base_dir, 'database', 'corridas.db')
 
 
 
-# Connect to the SQLite database
+# conexão com a database
 conn = sqlite3.connect(db_path)
 curr = conn.cursor()
 
