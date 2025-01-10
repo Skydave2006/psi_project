@@ -1,55 +1,56 @@
-#main.py NULL
+# main.py NULL
 
-#create.py 
+# create.py 
 
-###Função create_tables 
+### Função create_tables 
 
 Cria as tabelas carros, pilotos e corrida
 
-###Função insert_into_carros
+### Função insert_into_carros
 
 Insere dados na tabela carros 
 
-###Função insert_into_pilotos
+### Função insert_into_pilotos
 
 Insere dados na tabela pilotos 
 
-###Função insert_into_corrida
+### Função insert_into_corrida
 
 Insere dados na tabela corrida 
 
 
-#read.py 
+# read.py 
 
 
-###Função from_piloto_to_carro 
+### Função from_piloto_to_carro 
 
 Lê os carros que tem um piloto 
 
-###Função read_carros 
+### Função read_carros 
 
 Lê todos os carros da tabela 
 
-###Função read_pilotos 
+### Função read_pilotos 
 
 Lê todos os pilotos da tabela
 
-#update.py 
+# update.py 
 
 
-###Função update_carros 
+### Função update_carros 
 
 Atualiza um carro 
 
-###Função update_pilotos 
+### Função update_pilotos 
 
 Atualiza um piloto
 
 
 
 
-#Estrutura do repositório
-'''
+# Estrutura do repositório
+
+```
 project_psi
 ├── database
 │   └── corridas.db   
@@ -61,4 +62,4 @@ project_psi
 │   |   ├── delete.py    
 │   |   ├── read.py     
 │   |   └── update.py  
-'''   
+```   
