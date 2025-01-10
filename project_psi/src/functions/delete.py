@@ -16,14 +16,14 @@ db_path = os.path.join(base_dir, 'database', 'corridas.db')
 # conexão com a database
 conn = sqlite3.connect(db_path)
 curr = conn.cursor()
-
+#função para apagar a tabela
 def drop_table():
     curr.execute('''DROP TABLE corrida''')
-
+#função que apaga o primeiro id na tabela carros
 def delete_from_carros():
     print()
     curr.execute('''DELETE * FROM carros WHERE id = 1''')
-
+#função que apaga o primeiro id na tabela pilotos
 def delete_from_pilotos():
     print()
     curr.execute('''DELETE * FROM pilotos WHERE id = 1''')
